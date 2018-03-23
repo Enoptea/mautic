@@ -11,4 +11,6 @@ return $parameters = [
     'db_table_prefix'       => 'getenv(MAUTIC_TABLE_PREFIX)',
     'secret'                => 'getenv(MAUTIC_SECRET)',
     'default_pagelimit'     => 10,
+    'mailer_from_name'      => 'getenv(MAUTIC_EMAIL_FROM_NAME)',
+    'mailer_from_email'     => 'getenv(MAUTIC_EMAIL_FROM_EMAIL)',
 ];
