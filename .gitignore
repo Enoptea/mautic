@@ -20,7 +20,6 @@
 /app/cache/*
 !/app/cache/.gitkeep
 
-/app/config/local*.php
 /app/config/config_local.php
 /app/config/paths_local.php
 
@@ -94,3 +93,9 @@
 !/themes/blank-big.png
 
 /translations
+
+# Elastic Beanstalk Files
+!.ebextensions
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
