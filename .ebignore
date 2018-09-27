@@ -22,7 +22,6 @@
 
 /app/config/config_local.php
 /app/config/paths_local.php
-/app/config/local.php
 
 /app/logs/*
 !/app/logs/.gitkeep
@@ -30,8 +29,7 @@
 /app/Resources/SensioGeneratorBundle
 /app/spool/*
 
-/vendor/*
-!/vendor/.htaccess
+/vendor
 
 /bin/*
 /bundles
@@ -93,11 +91,8 @@
 !/themes/blank.png
 !/themes/blank-big.png
 
-/translations
-
 # Elastic Beanstalk Files
 !.ebextensions
-!.ebignore
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
