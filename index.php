@@ -8,6 +8,15 @@ if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
     $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_FORWARDED_FOR'];
 }
 
+// Fix for HTTS behind AWS load balancer
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+// FIX real client IP behind load balancer
+if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_FORWARDED_FOR'];
+}
+
 /*
  * @copyright   2014 Mautic Contributors. All rights reserved
  * @author      Mautic
