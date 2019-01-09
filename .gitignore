@@ -30,8 +30,7 @@
 /app/Resources/SensioGeneratorBundle
 /app/spool/*
 
-/vendor/*
-!/vendor/.htaccess
+/vendor
 
 /bin/*
 /bundles
